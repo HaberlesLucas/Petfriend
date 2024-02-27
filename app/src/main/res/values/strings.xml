@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name1">PETFRIEND</string>
+    <string name="ver">VER</string>
+    <string name="ver_productos">Productos</string>
+    <string name="producto_imagen">producto imagen</string>
+    <string name="pet_friend">PETE FRIEND</string>
+    <string name="venta">Venta</string>
+    <string name="eliminar">ELIMINAR</string>
+</resources>

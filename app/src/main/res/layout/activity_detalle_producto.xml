@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoApp"
+    tools:context=".DetalleProducto"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:contentPadding="10dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardDetallesBarra">
+        <ScrollView
+            android:id="@+id/scrollDetalles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lyDetalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/infoNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/nombreProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoCategoriaDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categoría"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/categoriaProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoMascota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mascota"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/mascototaProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    style="@style/ItemsDetalle"
+                    />
+
+                <TextView
+                    android:id="@+id/infoEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edad"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/edadProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    style="@style/ItemsDetalle"
+                    />
+
+                <TextView
+                    android:id="@+id/infoDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/descripcionProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40sp"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stock"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/stockProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    style="@style/ItemDetalleStock"
+                    />
+                <TextView
+                    android:id="@+id/infoPrecioContado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Contado"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/precioContadoProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoprecioListaProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Lista"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/precioListaProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoprecioSueltoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Suelto"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/precioSueltoProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infopesoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peso"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <TextView
+                    android:id="@+id/pesoProductoDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    style="@style/ItemsDetalle"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetallesBarra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/fondoItem"
+        android:orientation="vertical"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardDetalles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/lyDetallesBarra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            >
+            <!-- ICONO ELIMINAR EDITAR -->
+
+            <Button
+                android:id="@+id/btnEliminarProducto"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="0.1"
+                android:background="@drawable/baseline_delete_forever_24"
+                android:backgroundTint="@color/red"
+                android:keyboardNavigationCluster="false"
+                android:onClick="eliminarProducto"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btnEditarProductoDetalle"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:layout_gravity="end"
+                android:background="@drawable/baseline_edit"
+                android:backgroundTint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

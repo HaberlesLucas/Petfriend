@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="InfoTextoDetalle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="CustomTextViewStyle">
+        <item name="android:background">@drawable/radius_stock_green</item>
+    </style>
+
+    <style name="ItemsDetalle">
+        <item name="android:background">@drawable/fondo_items_detalle</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ItemDetalleStock">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/fondo_items_detalle</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">#FFFFFF</item> <!-- Color del texto -->
+        <item name="android:background">#3F51B5</item> <!-- Color de fondo -->
+    </style>
+    <style name="EstilosCheckDetalle" >
+        <item name="android:textColor">#FFFFFF</item> <!-- Cambia esto al color que prefieras -->
+        <item name="buttonTint">@color/white</item>
+    </style>
+</resources>

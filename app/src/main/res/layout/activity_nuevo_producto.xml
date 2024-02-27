@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoApp"
+    tools:context=".NuevoProducto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:contentPadding="10dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardDetallesBarra">
+        <ScrollView
+            android:id="@+id/scrollDetalles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lyDetalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/infoNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    style="@style/InfoTextoDetalle"
+                    />
+
+                <EditText
+                    android:id="@+id/nombreProductoNew"
+                    style="@style/ItemsDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+
+                <TextView
+                    android:id="@+id/infoCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categoría"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <RadioGroup
+                    android:id="@+id/categoriaProductoNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/alimentoRadioButtonNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alim."
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/jugueteRadioButtonNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Juguete"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/medicamentoRadioButtonNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Med."
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/otroCategoriaRadioButtonNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otro"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <RadioButton
+                        android:id="@+id/accesoriosRadioButtonNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accesorios"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/infoMascota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mascota"
+                    style="@style/InfoTextoDetalle"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/mascotaGroupNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/perroCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perro"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <CheckBox
+                        android:id="@+id/gatoCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gato"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <CheckBox
+                        android:id="@+id/aveCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ave"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <CheckBox
+                        android:id="@+id/otrosCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otros"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/infoEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edad"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <RadioGroup
+                    android:id="@+id/edadGroupNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cachorroCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cachorro"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <CheckBox
+                        android:id="@+id/adultoCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adulto"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <CheckBox
+                        android:id="@+id/mordidaPequenaCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mordida Pequeña"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <CheckBox
+                        android:id="@+id/jovenCheckboxNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Joven"
+                        style="@style/EstilosCheckDetalle"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/infoDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <EditText
+                    android:id="@+id/descripcionProductoNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stock"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <EditText
+                    android:id="@+id/stockProductoNew"
+                    style="@style/ItemDetalleStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:id="@+id/infoPrecioContado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Contado"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <EditText
+                    android:id="@+id/precioContadoProductoNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoprecioListaProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Lista"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <EditText
+                    android:id="@+id/precioListaProductoNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infoprecioSueltoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Suelto"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <EditText
+                    android:id="@+id/precioSueltoProductoNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    style="@style/ItemsDetalle"
+                    />
+                <TextView
+                    android:id="@+id/infopesoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peso"
+                    style="@style/InfoTextoDetalle"
+                    />
+                <EditText
+                    android:id="@+id/pesoProductoNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    style="@style/ItemsDetalle"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnAgregarFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar Foto"
+                    android:onClick="abrirSelectorDeImagen"
+                    app:layout_constraintTop_toBottomOf="@+id/cardDetalles"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAgregarFoto"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetallesBarra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/fondoItem"
+        android:orientation="vertical"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardDetalles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/lyDetallesBarra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center"
+            >
+            <!--btn confirmar edicion-->
+            <Button
+                android:id="@+id/btnConfirmarEdicion"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/baseline_credit_score_24"
+                android:backgroundTint="@color/white"
+                android:onClick="clickGuardar"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

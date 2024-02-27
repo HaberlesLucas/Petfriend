@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoApp"
+    tools:context=".NuevaVenta">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVenta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/lyVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/infoCantidad"
+                style="@style/InfoTextoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad" />
+
+            <EditText
+                android:id="@+id/editTextCantidad"
+                style="@style/ItemDetalleStock"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetallesBarra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/fondoItem"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoCantidad"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:id="@+id/lyBtnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConfirmarEdicion"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/venta_24"
+                android:backgroundTint="@color/white"
+                android:onClick="clickVender" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
