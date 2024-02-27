@@ -53,9 +53,9 @@ class NuevaVenta: AppCompatActivity(){
                 val cantidad = findViewById<EditText>(R.id.editTextCantidad)
 
                 //conexion
-                parametros.put("dbb", "u450356324_petfriend")
-                parametros.put("password", "Petfriend0")
-                parametros.put("usuario", "u450356324_petfriend")
+                parametros.put("dbb", "")
+                parametros.put("password", "")
+                parametros.put("usuario", "")
                 parametros.put("codProducto", producto.codProducto)
                 parametros.put("cantidad", cantidad.toString().toInt())
                 val param = parametros.toString(4)
