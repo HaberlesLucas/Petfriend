@@ -267,9 +267,9 @@ class NuevoProducto : AppCompatActivity() {
                 val parametros = JSONObject()
 
                 //conexion
-                parametros.put("dbb", "u450356324_petfriend")
-                parametros.put("password", "Petfriend0")
-                parametros.put("usuario", "u450356324_petfriend")
+                parametros.put("dbb", "")
+                parametros.put("password", "")
+                parametros.put("usuario", "")
 
                 // Obtener los IDs de las selecciones del usuario
                 val selectedCategoriaId = categoriaIdMap[selectedCategoria]
