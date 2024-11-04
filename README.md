@@ -25,8 +25,6 @@ Este proyecto es una aplicación móvil Android que se conecta a una API-REST pa
 
 ## Uso
 
-Describe aquí cómo utilizar la aplicación, incluyendo capturas de pantalla o ejemplos de código si es necesario.
-
 ## Contribución
 
 Si deseas contribuir a este proyecto, sigue estos pasos:
